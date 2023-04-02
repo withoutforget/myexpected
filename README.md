@@ -1,7 +1,7 @@
 # myexpected
 | Function  | Description |
 | ------------- | ------------- |
-| ```java expected(T&& obj){}```  | Constructor for first(value) type  |
+| ```c expected(T&& obj){}```  | Constructor for first(value) type  |
 | ```java expected(U&& obj){}```  | Constructor for second(error) type  |
 | ```java expected(const expected<T, U>& rhs){}``` | Copy constructor |
 | ```java expected operator=(const expected<T, U>& rhs){}``` | Copy operator |
