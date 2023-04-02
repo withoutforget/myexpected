@@ -1,4 +1,9 @@
 # Class description
+```cpp
+template<class T, class U>
+class expected;
+```
+```T``` is value type, ```U``` is error type.
 | Function  | Description |
 | ------------- | ------------- |
 | ```expected(T&& obj)```  | Constructor for first(value) type  |
