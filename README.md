@@ -21,8 +21,8 @@
 | ``` template<class F, class ... Args>    expected& if_error(F&& lambda, Args&& ... args)``` | Lambda invokes with args |
 
 
-#Examples
-##First example:
+# Examples
+## First example:
 ```cpp 
 expected<int, double> foo(int x) { // create function that returns expected 
     if (x % 2)
@@ -44,7 +44,7 @@ void TEST1() {
     print("d1 = ", d1, "\nd2 = ", d2, '\n');
 }
 ```
-##Second example:
+## Second example:
 ```cpp
 void TEST2() { 
     int i1 = 0, i2 = 0;
@@ -67,7 +67,7 @@ void TEST2() {
     print("d1 = ", d1, "\nd2 = ", d2, '\n');
 }
 ```
-###Third example:
+### Third example:
 ```cpp
   void TEST3() {
       int i1 = 0, i2 = 0;
