@@ -17,10 +17,7 @@
 | int set(T& val, U& err) | If set(T&,U&) returned 0, then val == value, else err == error |
 |  template<class F, class ... Args>
  expected& and_then_v(F&& lambda, Args&& ... args) | Lambda invokes with args and last argument is reference to value-value |
- | template<class F, class ... Args>
-    expected& if_error_v(F&& lambda, Args&& ... args) | Lambda invokes with args and last arguments is reference to error-value |
-| template<class F, class ... Args>
-    expected& and_then(F&& lambda, Args&& ... args) | Lambda invokes with args |
-|template<class F, class ... Args>
-    expected& if_error(F&& lambda, Args&& ... args) | Lambda invokes with args |
+ | template<class F, class ... Args>    expected& if_error_v(F&& lambda, Args&& ... args) | Lambda invokes with args and last arguments is reference to error-value |
+| template<class F, class ... Args>    expected& and_then(F&& lambda, Args&& ... args) | Lambda invokes with args |
+|template<class F, class ... Args>    expected& if_error(F&& lambda, Args&& ... args) | Lambda invokes with args |
     
