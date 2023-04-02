@@ -1,2 +1,5 @@
 # myexpected
-Stuff for return one of two types from function
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
