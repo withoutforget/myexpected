@@ -1,7 +1,7 @@
 #include <utility>
 // T is value type, U is error type.
 template<typename T, typename U>
-class expected {
+class expected final {
 private: // shared_ptr slow down for 2000ns
     T* value;
     U* error;
@@ -34,6 +34,23 @@ public: // ctors and dctors
     ~expected() {
         delete error;
         delete value;
+    }
+public:
+    template<class F>
+    expected<T, U>& operator|(F&& lambda) {
+        return this->and_then(std::forward<F>(lambda));
+    }
+    template<class F>
+    expected<T, U>& operator&(F&& lambda) {
+        return this->if_error(std::forward<F>(lambda));
+    }
+    template<class F>
+    expected<T, U>& operator||(F&& lambda) {
+        return this->and_then_v(std::forward<F>(lambda));
+    }
+    template<class F>
+    expected<T, U>& operator&&(F&& lambda) {
+        return this->if_error_v(std::forward<F>(lambda));
     }
 public: // getters
     bool has_value() { return !is_error; }
