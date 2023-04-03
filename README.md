@@ -1,7 +1,7 @@
 # Class description
 ```cpp
 template<class T, class U>
-class expected;
+class expected
 ```
 ```T``` is value type, ```U``` is error type.
 | Function  | Description |
