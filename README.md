@@ -1,5 +1,5 @@
 # Full documentation
-[withoutforget.github.io/myexpected/docs/classexpected.html](https://withoutforget.github.io/myexpected/docs/classexpected.html)
+[withoutforget.github.io/myexpected/](https://withoutforget.github.io/myexpected/)
 # Class description
 ```cpp
 template<class T, class U>
